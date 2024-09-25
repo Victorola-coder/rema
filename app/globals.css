@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid white;
 }
 
 body {
@@ -35,5 +34,21 @@ body::-webkit-scrollbar-track-piece {
 
 body::-webkit-scrollbar-thumb {
   @apply transition-all duration-500 
-  /* rounded-full bg-dark hover:bg-dark/60; */
+  /* rounded-full bg-dark hover:bg-dark/60; */;
+}
+
+h1 {
+  font-family: var(--font-champion-gothic-mono);
+  font-size: clamp(24rem, 28.3vw, 36rem);
+}
+
+@layer components {
+  .about-head {
+    @apply uppercase text-center leading-[0.85] font-black;
+  }
+
+  .about-text {
+    font-family: var(--font-neuemontreal-regular);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+  }
 }

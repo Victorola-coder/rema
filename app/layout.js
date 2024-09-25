@@ -1,9 +1,15 @@
-import "./globals.css";
 import localFont from "next/font/local";
+import "./globals.css";
 
-const geistSans = localFont({
+const NeueMontrealBold = localFont({
   src: "./fonts/NeueMontreal-Bold.otf",
   variable: "--font-neuemontreal-sans",
+  weight: "100 900",
+});
+
+const NeueMontreal = localFont({
+  src: "./fonts/NeueMontreal-Medium.otf",
+  variable: "--font-neuemontreal-regular",
   weight: "100 900",
 });
 
@@ -57,7 +63,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${NeueMontreal.variable} ${NeueMontrealBold.variable} ${geistMono.variable} antialiased py-6 h-screen w-screen`}
       >
         {children}
       </body>
