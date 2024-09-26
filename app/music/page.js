@@ -4,9 +4,13 @@ import Header from "@/app/_components/header";
 import heis from "@/public/heis.svg";
 import raveandroses from "@/public/r&r.svg";
 
+export const metadata = {
+  title: "Music",
+};
+
 export default function Page() {
   return (
-    <section className="flex flex-col h-full px-12">
+    <section className="flex flex-col bg-black py-8 h-full px-12">
       <Header text="new release">
         <button className="ring-1 p-3 rounded-full">
           <FaArrowLeft size={20} />{" "}

@@ -3,6 +3,12 @@ import rema1 from "@/public/rema-1.svg";
 import rema2 from "@/public/rema-2.png";
 import rema3 from "@/public/rema-3.svg";
 import rema4 from "@/public/rema-4.svg";
+import { title } from "process";
+
+export const metadata = {
+    title: "About"
+}
+
 
 export default function Page() {
   return (

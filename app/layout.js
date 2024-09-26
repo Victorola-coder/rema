@@ -21,11 +21,11 @@ const geistMono = localFont({
 
 export const metadata = {
   metadataBase: new URL("https://rema.victorola.me"),
-  title: "Rema - Portfolio",
+  title: { template: `%s | Rema`, default: "Heis | Rema" },
   description:
     "Explore the portfolio of Rema, showcasing creative works and projects. Discover a collection of Music, new albums, tours and creative endeavors.",
   applicationName: "Rema Portfolio",
-  authors: [{ name: "VickyJay", url: "https://victorla.me" }],
+  authors: [{ name: "10daer", url: "https://10daer.netlify.app" }],
   keywords: ["Rema", "HeisRema", "Bad boy Rema"],
   referrer: "origin",
   openGraph: {
@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${NeueMontreal.variable} ${NeueMontrealBold.variable} ${geistMono.variable} antialiased py-6 h-screen w-screen`}
+        className={`${NeueMontreal.variable} ${NeueMontrealBold.variable} ${geistMono.variable} antialiased h-screen w-screen`}
       >
         {children}
       </body>

@@ -37,6 +37,10 @@ body::-webkit-scrollbar-thumb {
   /* rounded-full bg-dark hover:bg-dark/60; */;
 }
 
+body:has(main) {
+  @apply bg-black py-6
+}
+
 h1 {
   font-family: var(--font-champion-gothic-mono);
   font-size: clamp(24rem, 28.3vw, 36rem);
