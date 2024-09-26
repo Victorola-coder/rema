@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
 }
 
 body {
@@ -38,21 +38,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 body:has(main) {
-  @apply bg-black py-6
-}
-
-h1 {
-  font-family: var(--font-champion-gothic-mono);
-  font-size: clamp(24rem, 28.3vw, 36rem);
+  @apply bg-black py-6;
 }
 
 @layer components {
   .about-head {
-    @apply uppercase text-center leading-[0.85] font-black;
-  }
-
-  .about-text {
-    font-family: var(--font-neuemontreal-regular);
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    @apply uppercase font-gothic text-aboutHead text-center leading-[0.85] font-black;
   }
 }

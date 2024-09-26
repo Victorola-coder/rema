@@ -5,7 +5,7 @@ import heis from "@/public/heis.svg";
 import raveandroses from "@/public/r&r.svg";
 
 export const metadata = {
-  title: "Music",
+  title: "🎶 Music",
 };
 
 export default function Page() {

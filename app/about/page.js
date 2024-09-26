@@ -6,8 +6,8 @@ import rema4 from "@/public/rema-4.svg";
 import { title } from "process";
 
 export const metadata = {
-    title: "About"
-}
+  title: "👤 About",
+};
 
 
 export default function Page() {
@@ -27,7 +27,7 @@ export default function Page() {
           <Image alt="" src={rema4} />
         </div>
         <div className="col-span-2 p-4 flex flex-col justify-center items-center">
-          <p className="text-justify leading-relaxed about-text font-semibold tracking-wider flex-grow text-red-500">
+          <p className="text-justify leading-relaxed text-aboutText font-regular font-semibold tracking-wider flex-grow text-red-500">
             <span className="uppercase p-1 mr-28 rounded-3xl px-4">info</span>{" "}
             Rema, born Divine Ikubor, is a Nigerian Afrobeat sensation who burst
             onto the global music scene with his unique blend of Afrobeat, trap,

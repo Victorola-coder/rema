@@ -1,23 +1,15 @@
-import localFont from "next/font/local";
+import {
+  NeueMontrealBold,
+  NeueMontrealBoldItalic,
+  NeueMontrealItalic,
+  NeueMontrealLight,
+  NeueMontrealLightItalic,
+  NeueMontrealMedium,
+  NeueMontrealMediumItalic,
+  NeueMontrealRegular,
+  ChampionGothic,
+} from "@/app/fonts/fonts";
 import "./globals.css";
-
-const NeueMontrealBold = localFont({
-  src: "./fonts/NeueMontreal-Bold.otf",
-  variable: "--font-neuemontreal-sans",
-  weight: "100 900",
-});
-
-const NeueMontreal = localFont({
-  src: "./fonts/NeueMontreal-Medium.otf",
-  variable: "--font-neuemontreal-regular",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/ChampionGothic-Middleweight.ttf",
-  variable: "--font-champion-gothic-mono",
-  weight: "100 900",
-});
 
 export const metadata = {
   metadataBase: new URL("https://rema.victorola.me"),
@@ -63,7 +55,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${NeueMontreal.variable} ${NeueMontrealBold.variable} ${geistMono.variable} antialiased h-screen w-screen`}
+        className={`${NeueMontrealMedium.variable} ${NeueMontrealBold.variable} ${NeueMontrealBoldItalic.variable}  ${NeueMontrealItalic.variable}  ${NeueMontrealLight.variable}  ${NeueMontrealLightItalic.variable}  ${NeueMontrealMediumItalic.variable}  ${NeueMontrealRegular.variable}  ${ChampionGothic.variable} antialiased h-screen w-screen`}
       >
         {children}
       </body>

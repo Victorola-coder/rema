@@ -4,7 +4,7 @@ import Header from "@/app/_components/header";
 import VideoPlayer from "@/app/_components/videoPlayer";
 
 export const metadata = {
-  title: "Videos",
+  title: "🎥 Videos",
 };
 
 export default function Page() {
