@@ -8,7 +8,7 @@ const MusicCard = ({ src, alt, title, year, category }) => {
       <div className="grid grid-cols-2 w-full justify-between items-start">
         <PlayBtn/>
         <div className="col-span-1 relative min-h-[19rem] w-full">
-          <Image src={src} alt={alt} layout="fill" objectFit="cover" />
+          <Image draggable={false} src={src} alt={alt} layout="fill" objectFit="cover" />
         </div>
       </div>
 

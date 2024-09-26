@@ -13,7 +13,7 @@ import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://rema.victorola.me"),
-  title: { template: `%s | Rema`, default: "Heis | Rema" },
+  title: { template: `Heiss | Rema`, default: "Heis | Rema" },
   description:
     "Explore the portfolio of Rema, showcasing creative works and projects. Discover a collection of Music, new albums, tours and creative endeavors.",
   applicationName: "Rema Portfolio",
