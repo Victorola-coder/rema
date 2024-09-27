@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useCallback, useRef, useState } from "react";
 import ReactPlayer from "react-player";
@@ -18,35 +18,35 @@ const videos = [
 ];
 
 export default function VideoPlayer() {
-      const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-      const [playing, setPlaying] = useState(false);
-      const playerRef = useRef(null);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const playerRef = useRef(null);
 
-      const togglePlayPause = useCallback(() => {
-        setPlaying((prevPlaying) => !prevPlaying);
-      }, []);
+  const togglePlayPause = useCallback(() => {
+    setPlaying((prevPlaying) => !prevPlaying);
+  }, []);
 
-      const playNextVideo = useCallback(() => {
-        if (currentVideoIndex < videos.length - 1) {
-          setCurrentVideoIndex((prevIndex) => prevIndex + 1);
-          setPlaying(true);
-        }
-      }, [currentVideoIndex, videos.length]);
+  const playNextVideo = useCallback(() => {
+    if (currentVideoIndex < videos.length - 1) {
+      setCurrentVideoIndex((prevIndex) => prevIndex + 1);
+      setPlaying(true);
+    }
+  }, [currentVideoIndex]);
 
-      const playPreviousVideo = useCallback(() => {
-        if (currentVideoIndex > 0) {
-          setCurrentVideoIndex((prevIndex) => prevIndex - 1);
-          setPlaying(true);
-        }
-      }, [currentVideoIndex]);
+  const playPreviousVideo = useCallback(() => {
+    if (currentVideoIndex > 0) {
+      setCurrentVideoIndex((prevIndex) => prevIndex - 1);
+      setPlaying(true);
+    }
+  }, [currentVideoIndex]);
 
-      const handleEnded = useCallback(() => {
-        playNextVideo();
-      }, [playNextVideo]);
+  const handleEnded = useCallback(() => {
+    playNextVideo();
+  }, [playNextVideo]);
 
-      const isFirstVideo = currentVideoIndex === 0;
-    const isLastVideo = currentVideoIndex === videos.length - 1;
-    
+  const isFirstVideo = currentVideoIndex === 0;
+  const isLastVideo = currentVideoIndex === videos.length - 1;
+
   return (
     <div className="flex relative flex-col mt-4 items-center rounded-3xl flex-grow w-full max-w-full mx-auto">
       <div className="w-full h-full rounded-3xl ">
